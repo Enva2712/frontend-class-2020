@@ -1,0 +1,20 @@
+{
+  "name": "frontend-class-2020",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Class website",
+  "scripts": {
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enva2712/frontend-class-2020.git"
+  },
+  "keywords": [],
+  "author": "Evan Rusmisel <evanrusmisel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Enva2712/frontend-class-2020/issues"
+  },
+  "homepage": "https://github.com/Enva2712/frontend-class-2020#readme"
+}
