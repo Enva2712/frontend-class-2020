@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Enva2712/frontend-class-2020/issues"
   },
-  "homepage": "https://github.com/Enva2712/frontend-class-2020#readme"
+  "homepage": "https://github.com/Enva2712/frontend-class-2020#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
 }
