@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "description": "Class website",
   "scripts": {
-    "start": ""
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,6 @@
   },
   "homepage": "https://github.com/Enva2712/frontend-class-2020#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^0.11.0"
   }
 }
