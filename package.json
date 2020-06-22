@@ -4,8 +4,13 @@
   "version": "0.0.0",
   "description": "Class website",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "start": "run-p start:*",
+    "start:content": "eleventy --serve",
+    "start:css": "postcss css/*.css --dir public/css -w",
+    "build": "run-p build:*",
+    "build:content": "eleventy",
+    "build:css": "postcss css/*.css --dir public/css"
+
   },
   "repository": {
     "type": "git",
@@ -19,6 +24,11 @@
   },
   "homepage": "https://github.com/Enva2712/frontend-class-2020#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0"
   }
 }
