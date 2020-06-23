@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Source+Code+Pro&display=swap');
+
+body {
+    background-color: #eee;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+main {
+    max-width: 40em;
+    margin: auto;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #cacaca;
+    padding: 0 .2em;
+    border-radius: .2em;
+}
+
+pre > code {
+    display: block;
+}
