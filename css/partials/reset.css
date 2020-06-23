@@ -1,0 +1,37 @@
+:root {
+    background-color: var(--background-color-light);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--header-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: hsl(200, 100%, 30%);
+    text-decoration-thickness: .16em;
+    text-decoration-color: hsla(200, 90%, 40%, .3);
+    transition: text-decoration .15s ease-in-out;
+
+    &:hover, &:active {
+        text-decoration-color: hsla(200, 100%, 30%, 1);
+    }
+}
+
+.bg-dark a {
+    color: hsl(200, 100%, 26.5%);
+}
+
+code {
+    background-color: var(--background-color-dark);
+    padding: 0 .2em;
+    border-radius: .2em;
+}

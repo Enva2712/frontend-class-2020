@@ -1,24 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Source+Code+Pro&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://unpkg.com/prismjs@1.20.0/themes/prism-tomorrow.css');
 
-body {
-    background-color: #eee;
-    font-family: 'Lora', serif;
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-main {
-    max-width: 40em;
-    margin: auto;
-}
-
-code {
-    font-family: 'Source Code Pro', monospace;
-    background-color: #cacaca;
-    padding: 0 .2em;
-    border-radius: .2em;
-}
-
-pre > code {
-    display: block;
-}
+@import url('./partials/vars.css');
+@import url('./partials/reset.css');
+@import url('./partials/utility.css');

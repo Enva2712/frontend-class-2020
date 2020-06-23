@@ -1,0 +1,17 @@
+:root {
+    --max-width: 40em;
+    --font-family: 'Inter', sans-serif;
+    --font-size: 18px;
+    --line-height: 1.4;
+    --color: #333;
+    --header-color: #000;
+    --gutter-size: .8em;
+    --background-color-light: #eee;
+    --background-color-dark: #c9c9c9;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        --font-family: 'Inter var', sans-serif;
+    }
+}
