@@ -51,8 +51,8 @@ You can also install an editor theme if you want by selecting themes on the righ
 
 ## Accounts to create
 
-In addition to those tools, we will need to create a GitHub account to use the atom teletype plugin and store our code. You can make one at [github.com](https://github.com/join).
+In addition to those tools, we will create a GitHub account to store our code and to set up the atom teletype plugin. You can make one at [github.com](https://github.com/join).
 
 ## That's it!
 
-If you completed the steps above, you're all set up. If you have questions or had trouble with one of the steps above, you can text or email me for help.
+If you completed the steps above, you're all set up for class. If you have questions or had trouble with one of the steps, you can text or email me for help.
