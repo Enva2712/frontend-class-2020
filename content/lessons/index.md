@@ -1,4 +1,5 @@
 ---
+title: Lessons
 layout: base
 tags:
 ---
