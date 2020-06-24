@@ -10,6 +10,13 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--header-color);
 }
 
+article h1 { font-size: 2em; }
+article h2 { font-size: 1.5em; }
+article h3 { font-size: 1.17em; }
+article h4 { font-size: 1em; }
+article h5 { font-size: 0.83em; }
+article h6 { font-size: 0.67em; }
+
 body {
     margin: 0;
     padding: 0;
