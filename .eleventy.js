@@ -7,6 +7,9 @@ module.exports = function(config) {
     )
 
     config.addPlugin(syntaxHighlight)
+    config.addPassthroughCopy('content/**/*.png')
+    config.addPassthroughCopy('content/**/*.jpg')
+    config.addPassthroughCopy('content/**/*.jpeg')
 
 	return {
 		dir: {
