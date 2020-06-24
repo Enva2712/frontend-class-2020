@@ -22,6 +22,10 @@
 
 .bg-dark {
     background-color: var(--background-color-dark);
+
+    & a {
+        color: hsl(200, 100%, 26.5%);
+    }
 }
 
 .fullwidth {
