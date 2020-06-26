@@ -4,3 +4,13 @@
 @import url('./partials/vars.css');
 @import url('./partials/reset.css');
 @import url('./partials/utility.css');
+
+main img {
+    display: block;
+    margin: 1em auto;
+    box-shadow: .05em .05em .4em #0002;
+}
+
+footer {
+    padding-bottom: 2em;
+}
