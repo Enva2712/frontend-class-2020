@@ -1,11 +1,11 @@
 ---
-title: CSS declarations
+title: CSS Declarations
 lesson: 1.2
 ---
 
-# CSS declarations
+# CSS Declarations
 
-HTML elements provide you with a way to describe content, but they don't give you free reign over how an element looks. CSS provides this functionality. For now, we will use CSS within our HTML document, but eventually, we will put the CSS into it's own file and reference the file in the HTML.
+HTML elements provide you with a way to describe content, but they don't give you free rein over how an element looks. CSS provides this functionality. For now, we will use CSS within our HTML document, but eventually, we will put the CSS into it's own file and reference the file in the HTML.
 
 In the last lesson, I mentioned the `style` attribute. The `style` attribute is used to apply CSS to an HTML element. In your HTML file, try adding the attribute `style="color: red;"` to an element.
 
