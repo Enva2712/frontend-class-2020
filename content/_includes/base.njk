@@ -3,13 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block css %}
     <link rel="stylesheet" href="/css/base.css">
+    {% endblock %}
+
     <title>{% if title %}{{ title }} &bull; {% endif %}Frontend Web Development &ndash; CarrerTek</title>
 </head>
 <body>
     {% include "partials/header.njk" %}
     <main class="constrain-width center pad">
+        {% block content %}
         {{ content | safe }}
+        {% endblock %}
     </main>
     {% include "partials/footer.njk" %}
 </body>

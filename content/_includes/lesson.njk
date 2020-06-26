@@ -1,7 +1,7 @@
----
-layout: base
----
+{% extends "base.njk" %}
 
-<article>
-    {{ content | safe }}
-</article>
+{% block content %}
+    <article>
+        {{ content | safe }}
+    </article>
+{% endblock %}
