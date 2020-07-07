@@ -58,4 +58,15 @@ To apply these declarations to some text, you would use the following HTML.
 
 ## Box Model
 
+At it's simplest, an HTML element is a rectangular box. For design reasons, you might want to add some spacing between that box and nearby boxes, add a border to the box, and/or add space between the border and the content. The CSS box model specifies how an element is laid out and displayed. The box model is a series of nested boxes that represent an element, and can be resized using CSS. On the inside, there is the content box that just contains the element content. Outside of that is the padding box, followed by the border box, and finally, the margin box. By default, the padding, border, and margin boxes have no width; but that can be changed using the `padding`, `border`, and `margin` CSS properties. Try applying the following CSS to an element:
+
+```css
+padding: 10px;
+border: 2px black;
+margin: 50px;
+```
+
+An important aspect of sizing HTML elements is that when you add `width` and `height` properties in CSS, they will be applied to one of the boxes mentioned above. By default, this is the content box, but it is possible to apply them to the border box instead using the `box-sizing: border-box` declaration. This is often used to add white space around the content of an element without making it overflow out of a certain area.
+
 ## Block and Inline Elements
+
