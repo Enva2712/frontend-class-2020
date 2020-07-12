@@ -52,15 +52,40 @@ In your browser, each tab has a title. This can be set by adding a `title` tag t
 
 ## The `style` Tag
 
-CSS declarations can also be added within the `style` element, by using CSS selectors. The `style` tag goes in the document head, and CSS selectors will be covered in the next lesson.
+CSS declaration blocks can be written inside the `style` element (more on CSS declaration blocks in the next lesson). The `style` tag goes in the document head.
 
 ## The `link` Tag
 
-To link to external resources like CSS files or page translations, the `link` tag is used. The `link` tag has an `href` attribute that holds the URL to the linked file, and a `rel` attribute that describes the relation between the document and the linked file.
+To link to other files like CSS files or page translations, the `link` tag can be used. The `link` tag has an `href` attribute that holds the URL to the linked file, and a `rel` attribute that describes how the linked file is related to the current page.
 
 ```html
 <!-- This link points to a CSS file in the same folder as the page called `file.css` -->
 <link rel="stylesheet" href="file.css">
 <!-- This link points to a french translation of the current page -->
 <link rel="alternate" href="in-french.html" hreflang="fr">
+```
+
+## Putting Everything Together
+
+Using The following code contains everything covered in this lesson (plus a bit that wasn't).
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is a webpage</title>
+        <style>
+            /* We haven't covered this syntax for CSS yet, so it's ok if it
+            doesn't make sense to you */
+            p {
+                color: blue;
+            }
+        </style>
+        <link rel="stylesheet" href="more-styles.css">
+    </head>
+    <body>
+        <h1>This is a header</h1>
+        <p>And this is a paragraph</p>
+    </body>
+</html>
 ```
