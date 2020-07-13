@@ -30,7 +30,7 @@ background-color: yellow;
 
 ## Text Formatting Properties
 
-Some properties for formatting text are `color`, `font-size`, `font-weight`, and `text-decoration`. Each of these has its own set of allowed values. For example, `color` can take a color name like blue or yellow, `font-size` can take a distance like 18px or 0.3in, `font-weight` can take a weight like bold or lighter, and `text-decoration` can take a value like underline or strikethrough.
+Some properties for formatting text are `color`, `font-size`, `font-weight`, and `text-decoration`. Each of these has its own set of allowed values. For example, `color` can take a color name like blue or yellow, `font-size` can take a distance like 18px or 0.3in, `font-weight` can take a weight like bold or lighter, and `text-decoration` can take a value like underline or line-through.
 
 ```css
 /* Make the element with this CSS have large, green, bold, underlined text */
