@@ -248,7 +248,7 @@ function format(name, age) {
     return name + ' is ' + age + ' years old.';
 }
 
-let name = 'Musa I;'
+let name = 'Musa I';
 let age = 740;
 let personInfo = format(name, age);
 ```
@@ -268,13 +268,13 @@ class Person {
     }
 }
 
-let strunk = new Person({
+let person = new Person({
     name: 'Ibn Sina',
     birthYear: 1037
 })
 
 // Now, we can access the person's age because we set it in the constructor
-console.log(strunk.name + ' is ' + strunk.age + ' years old.')
+console.log(person.name + ' is ' + person.age + ' years old.')
 ```
 
 Classes can also provide functions called methods that have access to the class instance.
