@@ -92,28 +92,18 @@ let people = [
 ];
 ```
 
-### Functions
+### Calling Functions
 
-Sometimes, there's code you want to run over and over again with few differences. Usually, a function is a good way to do this. Functions are bits of code that you can write once and call from other parts of your program. Here's a function that formats some text:
-
-```js
-function format(name, age) {
-    return name + ' is ' + age + ' years old.';
-}
-```
-
-To call a function, you use parentheses after the function's name, and put arguments in the parenthesis.
+Functions let you write some code in one place and use it in multiple other places. JavaScript functions are run by writing the name of the function, followed by parenthesis. Function arguments can also go in the parenthesis to run the function with a specific value. Writing your own functions is covered below.
 
 ```js
-format('Ibn Sina', 1040);
+// console.log is a built in function that prints a value to the console
+// Here, we print the value of the variable four
+let four = '4? What for?';
+console.log(four);
 
-// A function can also take variables as parameters:
-let person = {
-    name: 'Musa I',
-    age: 740
-}
-
-format(person.name, person.age)
+// alert creates an alert box
+alert("I'm in the user's way!")
 ```
 
 ### Conditionals
@@ -133,7 +123,7 @@ if(isJavaScript) {
 }
 ```
 
-Conditional statements always have an `if` statement, might have some `else if` statements, and might have an `else` statement. The statements must come in that order. As such, all of the following are valid conditionals (assuming that the functions and variables used in them have already been defined):
+Conditional statements always have an `if` statement, might have some `else if` statements, and might have an `else` statement. The statements must come in that order. As such, all of the following are valid conditionals (assuming that the functions and variables used in them have been defined):
 
 ```js
 if(iAmAnAlpaca) {
@@ -153,11 +143,11 @@ if(myDeskHasSpace) {
 let now = new Date();
 let currentHour = now.getHours();
 
-if(currentHour < 9 /* 9AM */) {
+if(currentHour < 9) { // If it's before 9AM
     steep('Sencha');
-} else if (currentHour < 20 /* 8PM */) {
+} else if (currentHour < 20) { // Otherwise, if it's not 8PM yet
     steep('Pepperment');
-} else {
+} else { // Otherwise
     steep('Chamomile');
 }
 ```
@@ -168,7 +158,7 @@ Earlier, we used `element.textContent` to change the text in an element. If we t
 
 Instead of using the `element.innerHTML` property to create elements, we are going to use the Document Object Model. To create an element, use the `document.createElement` function.
 
-Additionally, the `element.appendChild` method lets you insert an element into another. Below, a paragraph is created, given some text, and appended to the body element.
+Additionally, the `element.appendChild` function lets you insert an element into another. Below, a paragraph is created, given some text, and appended to the body element.
 
 ```js
 let paragraphElement = document.createElement('p');
@@ -204,7 +194,7 @@ containerElement.appendChild(content);
 
 ### Modifying CSS
 
-To change the classes on an element, use the `element.classList` property. It has a few methods like `add`, `remove`, and `toggle` (and others) that let you detect and modify what classes an element has.
+To change the classes on an element, use the `element.classList` property. It has properties like `add`, `remove`, and `toggle` (plus a few others) that let you detect and modify what classes an element has.
 
 ```js
 let header = document.querySelector('header');
@@ -222,9 +212,46 @@ profilePhoto.borderRadius = '100%';
 
 ### Ignore All That Stuff Anyway Though
 
-Creating large parts of a page using JavaScript is time consuming and hard to maintain. Understanding the DOM is important for knowing how to hook into and modify parts of a page, but it is unwieldy to use for larger projects. JavaScript frameworks exist to make doing those larger modifications simpler and more maintainable. If you need to build something large with lots of user interaction, consider learning a framework like [Svelte](https://svelte.dev/), [React](https://reactjs.org/), or [Vue](https://vuejs.org/). Those are outside of the scope of this class though.
+Creating large parts of a page using JavaScript is time consuming, hard to maintain, and impacts the SEO and portability of a webpage. Understanding the DOM is important for knowing how to hook into and modify parts of a page, but it is unwieldy to use. JavaScript frameworks exist to simplify making large parts of a page in JavaScript. If you need to create an extremely interactive site, consider learning a framework like [Svelte](https://svelte.dev/), [React](https://reactjs.org/), or [Vue](https://vuejs.org/). Frameworks are outside the scope of this class though.
 
-## More Complicated Bits
+## Organizing Code
+
+### Writing Functions
+
+Sometimes, there's code you want to run over and over again with few differences. Usually, a function is a good way to do this. Functions are bits of code that you can write once and call from other parts of your program. Functions are created by using the `function` keyword, writing the function name, followed by parenthesis, and curly brackets. Any code that the function should run goes in the curly brackets, and the return keyword finishes the function and lets you return a value to the code that ran the function.
+
+```js
+function thisIsAFunction() {}
+
+function getThree() {
+    return 3;
+}
+
+// the getThree function always returns 3
+let three = getThree();
+
+// Parameters are like variables that are defined when the function is run
+function returnWhatIGet(parameter) {
+    return parameter;
+}
+
+let fiftyFive = returnWhatIGet(55);
+
+function addThree(number) {
+    return number + 3;
+}
+
+let five = addThree(2);
+
+// Functions can take multiple parameters
+function format(name, age) {
+    return name + ' is ' + age + ' years old.';
+}
+
+let name = 'Musa I;'
+let age = 740;
+let personInfo = format(name, age);
+```
 
 ### Classes
 
@@ -242,8 +269,8 @@ class Person {
 }
 
 let strunk = new Person({
-    name: 'William Strunk',
-    birthYear: 1869
+    name: 'Ibn Sina',
+    birthYear: 1037
 })
 
 // Now, we can access the person's age because we set it in the constructor
