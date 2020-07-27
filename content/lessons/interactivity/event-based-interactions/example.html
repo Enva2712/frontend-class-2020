@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation example</title>
+        <style>
+            body {
+                font-size: 18px;
+                font-family: sans-serif;
+                margin: 0;
+            }
+
+            header {
+                background-color: #555;
+                color: white;
+                padding: 1em 2em;
+            }
+
+            .header-content {
+                max-width: 120ex;
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .nav-button {
+                display: block;
+                padding: 0;
+                font-size: 2em;
+                box-sizing: border-box;
+                background-color: transparent;
+                color: transparent;
+                cursor: pointer;
+                width: 1em;
+                height: 1em;
+                border-radius: 50%;
+                border: .15em solid #eee;
+                transition: .2s border ease-in-out;
+            }
+
+            .nav-button.open {
+                border: .5em solid #eee;
+            }
+
+            nav {
+                display: none;
+                max-width: 120ex;
+                margin: auto;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            nav.open {
+                display: flex;
+            }
+
+            nav a {
+                color: #29f;
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+
+            main {
+                max-width: 80ex;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <h1>Nav example</h1>
+                <button class="nav-button">Toggle Nav</button>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <script>
+            const navButton = document.querySelector('.nav-button');
+            const navBar = document.querySelector('nav');
+
+            navButton.addEventListener('click', function() {
+                navBar.classList.toggle('open');
+                navButton.classList.toggle('open');
+            });
+        </script>
+        <main>
+            <h1>This is the page content</h1>
+            <p>Deserunt non dolor eaque. Ea inventore et quod est. Maiores cupiditate dolorum commodi laudantium. Iure sed eius rerum. Quaerat et recusandae non dolore et dolor veniam.</p>
+            <p>Quidem labore ipsum error saepe. Eum dicta cum quae. Fugiat quae consequatur magnam vel non qui iure soluta. Ut nam asperiores perspiciatis incidunt nemo.</p>
+            <p>Sunt assumenda earum impedit. Ipsum quis impedit ea quaerat nemo delectus aut. Consequuntur sed iste rerum ullam qui non est. Est quasi in incidunt. Nobis velit placeat maxime sit tempore consequatur pariatur. Et reiciendis nihil natus ut.</p>
+            <p>Nemo tempore est quia et sapiente amet voluptatem. Aut quos quia id ad nesciunt deserunt ut. Labore nesciunt officia optio eaque. Magni magni aut quas et ipsum quia nihil.</p>
+            <p>Nam perspiciatis velit temporibus in. Aut ut assumenda consequatur temporibus illo ducimus. Vel enim omnis molestiae est numquam provident fugit beatae.</p>
+        </main>
+    </body>
+</html>
